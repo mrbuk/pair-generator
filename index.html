@@ -14,6 +14,10 @@
       margin: 0 auto;
       text-align: center;
     }
+    input {
+      margin-bottom: 10px;
+      width: 50px;
+    }
     textarea {
       width: 100%;
       height: 100px;
@@ -36,6 +40,8 @@
 <body>
   <div class="container">
     <h1>Pair Generator</h1>
+    <label for="numberOfRounds">Number of rounds:</label>
+    <input id="numberOfRounds" value="5"></input>
     <textarea id="nameList" placeholder="Enter names (one per line)"></textarea>
     <button id="generatePairs">Generate Pairs</button>
     <div class="output" id="output"></div>

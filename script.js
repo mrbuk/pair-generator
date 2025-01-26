@@ -1,4 +1,8 @@
-const numberOfRounds = 5;
+let numberOfRounds = 5;
+
+document.getElementById("numberOfRounds").addEventListener("change", (e) => {
+  numberOfRounds = e.target.value
+});
 
 document.getElementById("generatePairs").addEventListener("click", () => {
     const nameList = document.getElementById("nameList").value.trim();
@@ -29,7 +33,7 @@ document.getElementById("generatePairs").addEventListener("click", () => {
     }
  
   // Generate round-robin pairings for x rounds
-  const rounds = generateRoundRobinPairs(names, numberOfRounds5);
+  const rounds = generateRoundRobinPairs(names, numberOfRounds);
 
   // Display the rounds
   rounds.forEach((round, roundIndex) => {
